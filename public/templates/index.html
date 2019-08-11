@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Vehicle Prediction</title>
+</head>
+<body>
+    <h1>Upload New Vehicle Screenshot</h1>
+    
+    <form action="/predict" method="POST" enctype="multipart/form-data" id="upload_form">
+        <div>
+            <label for="screenshot">Attach Screenshot</label>
+            <input type="file" name="screenshot" id="screenshot">
+        </div>
+
+        <div>
+            <label for="num_results">Total Results</label>
+            <input type="number" name="num_results" id="num_results">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
